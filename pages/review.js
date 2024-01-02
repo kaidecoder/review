@@ -154,6 +154,8 @@ console.log("cheap friends: ", cheapSkates);
 
 // OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces. Using splitTheBill, return an array separating all three by characters.
 const splitTheCheapSkates = splitTheBill.split("");
+const splitCheaps = [...splitTheBill]
+console.log("split with spread operator", splitCheaps)
 console.log("split the cheapskates", splitTheCheapSkates);
 // Use this toLowerCase()
 const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS.";
@@ -173,7 +175,7 @@ console.log(
 
 // Returns "ell"
 const basicGreeting = "Hello World";
-let indexOfE = basicGreeting.indexOf("e");
+let indexOfE = basicGreeting.indexOf("e");//basicGreeting.substring(0,4)
 let searchForFirstL = basicGreeting.indexOf("l") + 1;
 let searchForSecondL = basicGreeting.indexOf("l") + 2;
 let slicedEll = basicGreeting.slice(indexOfE, searchForSecondL);
@@ -232,13 +234,13 @@ for (let t = 0; t < 20; t++) {
   console.log("I can't see right y'all");
 }
 // But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
-for (let t = 0; t < 20; t++) {
+
   while (t < 20) {
     console.log("I can't see right y'all");
     console.log("I'm sorry!!");
     t++;
   }
-}
+
 // For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :)
 
 // To The Left! To The Left! Everything I want in the console to the left. Print thing1, thing2, thing 3 using (FOR IN LOOP)
@@ -267,7 +269,8 @@ for (let word of tia) {
 // Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas. Inside the function, create a variable with the string "PS". Print their name in the console concatenated with the variable.
 const perscholas = ["Amira", "Arely", "Jonathan"];
 perscholas.forEach((person) => {
-  return console.log(person);
+  let prefix = "PS"
+  console.log(prefix + "" + person) //forEach returns nothing!!!!!
 });
 
 // =================================================
