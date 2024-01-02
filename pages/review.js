@@ -112,7 +112,7 @@ console.log("last indexOf Vanessa: ", vanessa.lastIndexOf("Vanessa"));
 // Can we use length for strings? I don't know, you tell me.
 const noWeCantTeo = "but did you try it out though?";
 console.log("can we use length for strings?", noWeCantTeo.length);
-// If only it was this easy to replace() my ex. Totally not joking, LOL. JK
+// If only it was this easy to replace() my ex. Totally not joking, LOL. JK.  [replaceAll]
 const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!";
 console.log(
   "replace Goku with Vegeta: ",
@@ -120,6 +120,7 @@ console.log(
 );
 // Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'.
 const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4";
+joshIsLookingForWifey.search("wifey")
 
 //Method 1 uses slice
 let sliced = joshIsLookingForWifey.slice(
